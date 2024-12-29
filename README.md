@@ -18,7 +18,6 @@ This project implements various Abstract Data Types (ADTs) in Python, focusing o
   - Models Minesweeper-like tiles with various states.
   - Provides utility functions for marking, cleaning, and hiding mines.
 
-## Example Usage
 ## How It Works
 Each Abstract Data Type is implemented with:
 
@@ -38,3 +37,20 @@ Programming Language: Python
 
 ## Acknowledgments
 This project was developed as part of an academic exercise at Instituto Superior Técnico (IST). 
+
+## Example Usage
+  ```python
+# Creating and manipulating a random number generator
+generator = cria_gerador(32, 12345)
+print(gera_numero_aleatorio(generator, 10))  # Random number between 1-10
+
+# Working with coordinates
+coord = cria_coordenada('A', 1)
+print(coordenada_para_str(coord))           # Output: A01
+
+# Handling parcels
+parcel = cria_parcela()
+limpa_parcela(parcel)
+print(parcela_para_str(parcel))             # Output: ?
+
+
